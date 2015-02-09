@@ -10,21 +10,23 @@ body {
 .main {
   width: 1024px;
   height: 768px;
-  display: -webkit-box;
   margin-left: auto;
   margin-right: auto;
+}
+.index-main {
+  display: -webkit-box;
   color: #9b69d0;
 }
-.main .col {
+.index-main .col {
   width: 33.33%;
   text-align: center;
   font-size: 30px;
 }
-.main .col a {
+.index-main .col a {
   text-decoration: none;
   color: #9b69d0;
 }
-.main .col .round {
+.index-main .col .round {
   background-color: #9b69d0;
   width: 200px;
   height: 200px;
@@ -33,12 +35,12 @@ body {
   margin-bottom: 15px;
   border-radius: 100%;
 }
-.main .col .info {
+.index-main .col .info {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 100px;
 }
-.main .col .info .cover {
+.index-main .col .info .cover {
   margin-left: auto;
   margin-right: auto;
   width: 250px;
@@ -47,12 +49,39 @@ body {
   overflow: hidden;
   background-color: #9b69d0;
 }
-.main .col .info .cover img {
+.index-main .col .info .cover img {
   margin-top: 2px;
   width: 246px;
   height: 246px;
   border-radius: 100%;
 }
-.main .lower {
+.index-main .lower {
   margin-top: 250px;
+}
+.header-menu {
+  display: -webkit-box;
+  line-height: 75px;
+  font-size: 20px;
+  color: cornflowerblue;
+}
+.header-menu .home-btn {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+  background-color: cornflowerblue;
+  margin-right: 10px;
+}
+.header-menu a {
+  text-decoration: none;
+  color: cornflowerblue;
+}
+.s1 {
+  height: 1500px;
+  width: 100%;
+  background-color: coral;
+}
+.s2 {
+  height: 1500px;
+  width: 100%;
+  background-color: #994d31;
 }
