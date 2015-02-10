@@ -19,7 +19,7 @@
             content.html(youtubeEmbedLink.replace('{LINK}', contentLinks[0]));
             overlay.find('.text').text(self.data('text'));
 
-            overlay.find('.wrapper').on('click', function(event){
+            overlay.find('.wrapper').on('click', function (event) {
                 event.stopPropagation();
             });
 
@@ -28,7 +28,6 @@
                 clearOverlay();
                 overlay.hide();
             });
-
 
 
             if (contentLinks.length > 1) {
@@ -53,7 +52,7 @@
                 });
             }
         });
-        function clearOverlay(){
+        function clearOverlay() {
             content.html('');
             thumbs.html('');
             text.html('');
