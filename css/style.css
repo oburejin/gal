@@ -78,6 +78,10 @@ body {
   text-decoration: none;
   color: cornflowerblue;
 }
+.section {
+  display: -webkit-box;
+  display: flex;
+}
 .section .thumb {
   width: 140px;
   height: 140px;

@@ -2,7 +2,7 @@
     $(document).ready(function () {
 
 
-        var youtubeEmbedLink = '<iframe width="770" height="432" src="{LINK}?autoplay=0" frameborder="0" allowfullscreen ></iframe>'
+        var youtubeEmbedLink = '<iframe width="770" height="432" src="{LINK}?autoplay=1" frameborder="0" allowfullscreen ></iframe>'
         var body = $('body');
         var overlay = $('#overlay');
         var thumbs = overlay.find('.thumbs');
