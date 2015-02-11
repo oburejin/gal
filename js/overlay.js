@@ -16,7 +16,11 @@
             event.preventDefault();
             body.addClass('noscroll');
             overlay.show();
-            content.html(youtubeEmbedLink.replace('{LINK}', contentLinks[0]));
+            if (contentLinks[0].indexOf('youtube') !== -1) {
+                content.html(youtubeEmbedLink.replace('{LINK}', contentLinks[0]));
+            } else {
+                content.html('<img src="' + contentLinks[0] + '">');
+            }
             overlay.find('.text').text(self.data('text'));
 
             overlay.find('.wrapper').on('click', function (event) {
