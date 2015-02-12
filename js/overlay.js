@@ -21,7 +21,7 @@
             } else {
                 content.html('<img src="' + contentLinks[0] + '">');
             }
-            overlay.find('.text').text(self.data('text'));
+            overlay.find('.text').html(self.data('text'));
 
             overlay.find('.wrapper').on('click', function (event) {
                 event.stopPropagation();

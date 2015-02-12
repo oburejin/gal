@@ -9,7 +9,7 @@ body {
   height: 100%;
 }
 .main {
-  width: 1024px;
+  width: 900px;
   height: 768px;
   margin-left: auto;
   margin-right: auto;
@@ -63,14 +63,27 @@ body {
   margin-top: 250px;
 }
 .header-menu {
+  width: 100%;
   display: -webkit-box;
   line-height: 75px;
   font-size: 20px;
   color: cornflowerblue;
+  background-color: white;
+  text-transform: uppercase;
+}
+.header-menu.projects {
+  color: #c8b410;
+}
+.header-menu.projects .home-btn {
+  background-color: #c8b410;
+}
+.header-menu.projects a {
+  color: #c8b410;
 }
 .header-menu .home-btn {
   width: 75px;
   height: 75px;
+  display: block;
   border-radius: 100%;
   background-color: cornflowerblue;
   margin-right: 10px;
@@ -78,24 +91,52 @@ body {
 .header-menu a {
   text-decoration: none;
   color: cornflowerblue;
+  margin-right: 40px;
 }
 .section {
   padding-top: 50px;
-  padding-bottom: 200px;
+  padding-bottom: 50px;
   display: -webkit-box;
   display: flex;
+  flex-wrap: wrap;
   border-bottom: 1px solid cornflowerblue;
 }
 .section .thumb {
   width: 140px;
   height: 140px;
   border-radius: 100%;
-  margin-right: 20px;
+  margin: 0 40px 30px 40px;
 }
 .section .thumb img {
   width: 140px;
   height: auto;
   border-radius: 100%;
+}
+.section .block {
+  font-size: 20px;
+}
+.section .block .header {
+  font-size: 50px;
+  color: #c8b410;
+}
+.section .block .info {
+  display: -webkit-box;
+}
+.section .block .info .cover {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+}
+.section .block .info .cover img {
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 100%;
+}
+.section .block .info .links {
+  margin-top: 30px;
+}
+.main.projects .section {
+  border-bottom: 1px solid #c8b410;
 }
 #overlay {
   display: none;

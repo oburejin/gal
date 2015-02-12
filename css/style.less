@@ -11,8 +11,9 @@ html, body {
 
 @main: #9b69d0;
 @blue: cornflowerblue;
+@yellow: #c8b410;
 .main {
-  width: 1024px;
+  width: 900px;
   height: 768px;
   margin-left: auto;
   margin-right: auto;
@@ -69,13 +70,28 @@ html, body {
 }
 
 .header-menu {
+  width: 100%;
   display: -webkit-box;
   line-height: 75px;
   font-size: 20px;
   color: @blue;
+  background-color: white;
+  text-transform: uppercase;
+
+  &.projects {
+    color: @yellow;
+
+    .home-btn {
+      background-color: @yellow;
+    }
+    a {
+      color: @yellow;
+    }
+  }
   .home-btn {
     width: 75px;
     height: 75px;
+    display: block;
     border-radius: 100%;
     background-color: @blue;
     margin-right: 10px;
@@ -83,26 +99,62 @@ html, body {
   a {
     text-decoration: none;
     color: @blue;
+    margin-right: 40px;
   }
 }
 
 .section {
   padding-top: 50px;
-  padding-bottom: 200px;
+  padding-bottom: 50px;
   display: -webkit-box;
   display: flex;
-
+  flex-wrap: wrap;
   border-bottom: 1px solid @blue;
+
   .thumb {
     width: 140px;
     height: 140px;
     border-radius: 100%;
-    margin-right: 20px;
+    margin: 0 40px 30px 40px;
     img {
       width: 140px;
       height: auto;
       border-radius: 100%;
     }
+  }
+  .block {
+
+    font-size: 20px;
+    .header {
+      font-size: 50px;
+      color: @yellow;
+    }
+    .info {
+      display: -webkit-box;
+      .cover {
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        img {
+          max-width: 150px;
+          max-height: 150px;
+          border-radius: 100%;
+        }
+      }
+
+      .links {
+        margin-top: 30px;
+      }
+    }
+    .text {
+    }
+  }
+
+}
+
+.main.projects{
+  .section{
+    border-bottom: 1px solid @yellow;
   }
 }
 
@@ -137,7 +189,7 @@ html, body {
         width: 770px;
         display: -webkit-box;
         -webkit-box-pack: center;
-        img{
+        img {
           max-width: 770px;
           max-height: 432px;
         }
@@ -173,13 +225,13 @@ html, body {
 }
 
 .s1 {
-//  height: 500px;
+  //  height: 500px;
   width: 100%;
 
 }
 
 .s2 {
-//  height: 1500px;
+  //  height: 1500px;
   width: 100%;
   //  background-color: #994d31;
 }
