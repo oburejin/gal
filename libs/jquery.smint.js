@@ -52,14 +52,16 @@
 
             if (!$(this).hasClass("extLink")) {
                 $(this).attr('id', id);
+
+
+                //Fill the menu
+                optionLocs.push(Array(
+                        $(mySelector + "." + id).position().top - menuHeight,
+                        $(mySelector + "." + id).height() + $(mySelector + "." + id).position().top, id)
+                );
+            }else{
+                optionLocs.push(Array(0,0,''));
             }
-
-
-            //Fill the menu
-            optionLocs.push(Array(
-                    $(mySelector + "." + id).position().top - menuHeight,
-                    $(mySelector + "." + id).height() + $(mySelector + "." + id).position().top, id)
-            );
 
             ///////////////////////////////////
 
@@ -140,7 +142,12 @@
                 var myOffset = smint.height();
 
                 // stops hrefs making the page jump when clicked
+                if ($(this).hasClass("extLink")) {
+                    location.href = $(this).attr('href');
+                    return false;
+                }
                 e.preventDefault();
+
 
                 // get the hash of the button you just clicked
                 var hash = $(this).attr('href').split('#')[1];
@@ -153,9 +160,7 @@
 
                 // if the link has the '.extLink' class it will be ignored
                 // Courtesy of mcpacosy ‏(@mcpacosy)
-                if ($(this).hasClass("extLink")) {
-                    return false;
-                }
+
 
             });
 
