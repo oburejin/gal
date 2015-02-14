@@ -28,9 +28,9 @@
             });
 
             overlay.on('click', function (event) {
-                body.removeClass('noscroll');
+                //body.removeClass('noscroll');
                 clearOverlay();
-                overlay.hide();
+                //overlay.hide();
             });
 
 
@@ -57,10 +57,12 @@
             }
         });
         function clearOverlay() {
+            $('body').removeClass('noscroll');
+            $('#overlay').hide();
+
             content.html('');
             thumbs.html('');
             text.html('');
-
         }
     });
 

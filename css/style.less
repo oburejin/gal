@@ -72,7 +72,7 @@ html, body {
 .header-menu {
   width: 100%;
   display: -webkit-box;
-  line-height: 75px;
+  line-height: 102px;
   font-size: 20px;
   color: @blue;
   background-color: white;
@@ -94,7 +94,8 @@ html, body {
     display: block;
     border-radius: 100%;
     background-color: @blue;
-    margin-right: 10px;
+    margin-top: 15px;
+    margin-right: 40px;
   }
   a {
     text-decoration: none;
@@ -105,23 +106,42 @@ html, body {
 
 .section {
   padding-top: 50px;
-  padding-bottom: 50px;
-  display: -webkit-box;
-  display: flex;
-  flex-wrap: wrap;
   border-bottom: 1px solid @blue;
 
-  .thumb {
-    width: 140px;
-    height: 140px;
-    border-radius: 100%;
-    margin: 0 40px 30px 40px;
-    img {
+  .header{
+  font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .thumbs{
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    .thumb {
       width: 140px;
-      height: auto;
+      height: 140px;
       border-radius: 100%;
+      margin: 0 85px 85px 0;
+      img {
+        width: 140px;
+        height: auto;
+        border-radius: 100%;
+      }
     }
   }
+
+  &.ds1{
+    color: @blue;
+  }
+  &.ds2{
+    color: @blue;
+  }
+  &.ds3{
+    color: @blue;
+  }
+  &.ds4{
+    color: @blue;
+  }
+
   .block {
 
     font-size: 20px;
@@ -202,18 +222,19 @@ html, body {
         -webkit-box-orient: vertical;
         -webkit-box-pack: justify;
         .text {
-          margin-left: 15px;
-          margin-top: 15px;
+          margin: 15px;
         }
         .thumbs {
           margin-bottom: 15px;
           margin-left: 15px;
           display: -webkit-box;
-          //todo: build 2nd layer when more than 3 icons
+          display: flex;
+          flex-wrap: wrap;
           .thumb {
             width: 70px;
             height: 70px;
             margin-right: 5px;
+            margin-bottom: 5px;
             border-radius: 100%;
             background-color: @blue;
           }
