@@ -143,20 +143,44 @@ body {
   margin-top: 24px;
 }
 .ds1 {
-  color: #3e78ff;
   border-bottom: 1px solid #3e78ff;
 }
+.ds1 .header {
+  color: #3e78ff;
+}
+a.ds1 {
+  color: #3e78ff;
+  border: none;
+}
 .ds2 {
-  color: #5e85ea;
   border-bottom: 1px solid #5e85ea;
 }
+.ds2 .header {
+  color: #5e85ea;
+}
+a.ds2 {
+  color: #5e85ea;
+  border: none;
+}
 .ds3 {
-  color: #1b51b1;
   border-bottom: 1px solid #1b51b1;
 }
+.ds3 .header {
+  color: #1b51b1;
+}
+a.ds3 {
+  color: #1b51b1;
+  border: none;
+}
 .ds4 {
-  color: #06387d;
   border-bottom: 1px solid #06387d;
+}
+.ds4 .header {
+  color: #06387d;
+}
+a.ds4 {
+  color: #06387d;
+  border: none;
 }
 .ps1 {
   border-bottom: 1px solid #ffcd20;
