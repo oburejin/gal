@@ -52,6 +52,9 @@ p {
   margin-right: auto;
   margin-bottom: 15px;
   border-radius: 100%;
+  line-height: 200px;
+  color: white;
+  font-size: 30px;
 }
 .index-main .col .info {
   margin-left: auto;
@@ -150,8 +153,25 @@ p {
   margin-top: 30px;
   margin-left: 15px;
 }
+.section .block .info .comment {
+  margin-left: 15px;
+  width: 735px;
+}
 .section .block .text {
   margin-top: 24px;
+}
+.section .block .subheader {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.section .block .translation {
+  display: flex;
+  justify-content: space-between;
+}
+.section .block .translation .in,
+.section .block .translation .out {
+  width: 45%;
 }
 .ds1 {
   border-bottom: 1px solid #3e78ff;
@@ -231,41 +251,51 @@ a.ps3 {
   z-index: 1000;
   position: fixed;
   top: 0;
+  overflow: auto;
+}
+#overlay .overflow-wrapper {
+  min-width: 1030px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   text-align: center;
 }
-#overlay:before {
+#overlay .overflow-wrapper:before {
   content: '';
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
-#overlay .wrapper {
+#overlay .overflow-wrapper .wrapper {
   width: 1024px;
+  min-height: 432px;
   max-height: 600px;
   position: relative;
   display: inline-block;
   vertical-align: middle;
   background-color: white;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
-#overlay .wrapper.big {
+#overlay .overflow-wrapper .wrapper.big {
   height: 600px;
 }
-#overlay .wrapper .inner {
+#overlay .overflow-wrapper .wrapper .inner {
   height: 100%;
   display: -webkit-box;
 }
-#overlay .wrapper .inner .content {
+#overlay .overflow-wrapper .wrapper .inner .content {
   text-align: left;
   width: 770px;
   display: -webkit-box;
   -webkit-box-pack: center;
 }
-#overlay .wrapper .inner .content img {
+#overlay .overflow-wrapper .wrapper .inner .content img {
   max-width: 770px;
   max-height: 600px;
 }
-#overlay .wrapper .inner .desc {
+#overlay .overflow-wrapper .wrapper .inner .desc {
   width: 254px;
   text-align: left;
   display: -webkit-box;
@@ -273,17 +303,17 @@ a.ps3 {
   -webkit-box-orient: vertical;
   -webkit-box-pack: justify;
 }
-#overlay .wrapper .inner .desc .text {
+#overlay .overflow-wrapper .wrapper .inner .desc .text {
   margin: 15px;
 }
-#overlay .wrapper .inner .desc .thumbs {
+#overlay .overflow-wrapper .wrapper .inner .desc .thumbs {
   margin-bottom: 15px;
   margin-left: 15px;
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
 }
-#overlay .wrapper .inner .desc .thumbs .thumb {
+#overlay .overflow-wrapper .wrapper .inner .desc .thumbs .thumb {
   width: 70px;
   height: 70px;
   margin-right: 5px;
