@@ -43,6 +43,7 @@ p {
 
 .index-main {
   display: -webkit-box;
+  display: flex;
   color: @main;
   width: 900px;
   margin-left: auto;
@@ -55,6 +56,7 @@ p {
       text-decoration: none;
       color: @main;
     }
+
     .round {
       background-color: @main;
       width: 200px;
@@ -63,9 +65,16 @@ p {
       margin-right: auto;
       margin-bottom: 15px;
       border-radius: 100%;
-      line-height: 200px;
-      color: white;
-      font-size: 30px;
+      padding-top: 75px;
+      box-sizing: border-box;
+
+      span {
+        color: white;
+        font-size: 30px;
+      }
+      img {
+
+      }
     }
     .info {
       margin-left: auto;
@@ -96,6 +105,7 @@ p {
 .header-menu {
   width: 100%;
   display: -webkit-box;
+  display: flex;
   line-height: 102px;
   font-size: 20px;
   color: @blue;
@@ -137,6 +147,8 @@ p {
     display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
     .thumb {
       width: 140px;
       height: 140px;
@@ -153,7 +165,6 @@ p {
     }
   }
 
-
   .block {
 
     .header {
@@ -161,6 +172,7 @@ p {
     }
     .info {
       display: -webkit-box;
+      display: flex;
       .cover {
         width: 150px;
         height: 150px;
@@ -176,7 +188,9 @@ p {
         margin-top: 30px;
         margin-left: 15px;
       }
-      .comment{
+      .comment {
+        font-size: 15px;
+        font-style: italic;
         margin-left: 15px;
         width: 735px;
       }
@@ -185,16 +199,16 @@ p {
       margin-top: 24px;
     }
 
-    .subheader{
+    .subheader {
       margin-top: 10px;
       margin-bottom: 10px;
       font-weight: bold;
     }
-    .translation{
+    .translation {
       display: flex;
       justify-content: space-between;
 
-      .in,.out{
+      .in, .out {
         width: 45%;
       }
 
@@ -303,7 +317,9 @@ a.ps3 {
   .overflow-wrapper {
     min-width: 1030px;
     height: 100%;
-    position: absolute;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
     top: 0;
     left: 0;
     text-align: center;
@@ -330,10 +346,12 @@ a.ps3 {
       .inner {
         height: 100%;
         display: -webkit-box;
+        display: flex;
         .content {
           text-align: left;
           width: 770px;
           display: -webkit-box;
+          display: flex;
           -webkit-box-pack: center;
           img {
             max-width: 770px;
@@ -344,6 +362,7 @@ a.ps3 {
           width: 254px;
           text-align: left;
           display: -webkit-box;
+          display: flex;
           flex-direction: column;
           -webkit-box-orient: vertical;
           -webkit-box-pack: justify;
@@ -356,6 +375,8 @@ a.ps3 {
             display: -webkit-box;
             display: flex;
             flex-wrap: wrap;
+            display: -webkit-flex;
+            -webkit-flex-wrap: wrap;
             .thumb {
               width: 70px;
               height: 70px;
