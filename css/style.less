@@ -26,11 +26,13 @@ html, body {
 @yellow: #ffcd20;
 @yellow2: #e9a617;
 @yellow3: #d58b12;
+@green1: #58ab46;
+@green2: #559942;
 .main {
   width: 900px;
-  height: 768px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 100px;
 }
 
 .noscroll {
@@ -46,6 +48,7 @@ p {
   display: flex;
   color: @main;
   width: 900px;
+  min-height: 95%;
   margin-left: auto;
   margin-right: auto;
   .col {
@@ -118,12 +121,19 @@ p {
       background-color: @yellow;
     }
   }
+
+  &.translation {
+    .home-btn {
+      background-color: @green1;
+    }
+  }
   .home-btn {
     width: 75px;
     height: 75px;
     display: block;
     border-radius: 100%;
-    background-color: @blue;
+    background: @blue url('../img/home_button.png') no-repeat center;
+    background-size: 30px 30px;
     margin-top: 15px;
     margin-right: 40px;
   }
@@ -138,6 +148,16 @@ p {
   padding-top: 56px;
   padding-bottom: 24px;
   border-bottom: 1px solid @blue;
+  &:last-child{
+    border: none;
+  }
+  .intro {
+    font-style: italic;
+    a {
+      display: block;
+      margin-top: 5px;
+    }
+  }
 
   .header {
     font-size: 40px;
@@ -197,6 +217,10 @@ p {
     }
     .text {
       margin-top: 24px;
+      ul > li {
+        margin-top: 5px;
+        list-style: none;
+      }
     }
 
     .subheader {
@@ -274,6 +298,7 @@ a.ds4 {
 
 a.ps1 {
   color: @yellow;
+  border: none;
 }
 
 .ps2 {
@@ -285,6 +310,7 @@ a.ps1 {
 
 a.ps2 {
   color: @yellow2;
+  border: none;
 }
 
 .ps3 {
@@ -296,12 +322,41 @@ a.ps2 {
 
 a.ps3 {
   color: @yellow3;
+  border: none;
+}
+
+.ts1 {
+  border-bottom: 1px solid @green1;
+  .header {
+    color: @green1;
+  }
+}
+
+a.ts1 {
+  color: @green1;
+  border: none;
+}
+
+.ts2 {
+  border-bottom: 1px solid @green2;
+  .header {
+    color: @green2;
+  }
+}
+
+a.ts2 {
+  color: @green2;
+  border: none;
 }
 
 .main.projects {
   .section {
     border-bottom: 1px solid;
+    &:last-child{
+      border: none;
+    }
   }
+
 }
 
 #overlay {
@@ -393,3 +448,15 @@ a.ps3 {
   }
 }
 
+.footer {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-between;
+  -webkit-box-pack: justify;
+  a{
+    color: #0f4b97;
+  }
+}

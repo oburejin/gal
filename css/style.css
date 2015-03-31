@@ -18,9 +18,9 @@ body {
 }
 .main {
   width: 900px;
-  height: 768px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 100px;
 }
 .noscroll {
   overflow: hidden;
@@ -33,6 +33,7 @@ p {
   display: flex;
   color: #9b69d0;
   width: 900px;
+  min-height: 95%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -96,12 +97,16 @@ p {
 .header-menu.projects .home-btn {
   background-color: #ffcd20;
 }
+.header-menu.translation .home-btn {
+  background-color: #58ab46;
+}
 .header-menu .home-btn {
   width: 75px;
   height: 75px;
   display: block;
   border-radius: 100%;
-  background-color: #3e78ff;
+  background: #3e78ff url('../img/home_button.png') no-repeat center;
+  background-size: 30px 30px;
   margin-top: 15px;
   margin-right: 40px;
 }
@@ -114,6 +119,16 @@ p {
   padding-top: 56px;
   padding-bottom: 24px;
   border-bottom: 1px solid #3e78ff;
+}
+.section:last-child {
+  border: none;
+}
+.section .intro {
+  font-style: italic;
+}
+.section .intro a {
+  display: block;
+  margin-top: 5px;
 }
 .section .header {
   font-size: 40px;
@@ -169,6 +184,10 @@ p {
 }
 .section .block .text {
   margin-top: 24px;
+}
+.section .block .text ul > li {
+  margin-top: 5px;
+  list-style: none;
 }
 .section .block .subheader {
   margin-top: 10px;
@@ -231,6 +250,7 @@ a.ds4 {
 }
 a.ps1 {
   color: #ffcd20;
+  border: none;
 }
 .ps2 {
   border-bottom: 1px solid #e9a617;
@@ -240,6 +260,7 @@ a.ps1 {
 }
 a.ps2 {
   color: #e9a617;
+  border: none;
 }
 .ps3 {
   border-bottom: 1px solid #d58b12;
@@ -249,9 +270,33 @@ a.ps2 {
 }
 a.ps3 {
   color: #d58b12;
+  border: none;
+}
+.ts1 {
+  border-bottom: 1px solid #58ab46;
+}
+.ts1 .header {
+  color: #58ab46;
+}
+a.ts1 {
+  color: #58ab46;
+  border: none;
+}
+.ts2 {
+  border-bottom: 1px solid #559942;
+}
+.ts2 .header {
+  color: #559942;
+}
+a.ts2 {
+  color: #559942;
+  border: none;
 }
 .main.projects .section {
   border-bottom: 1px solid;
+}
+.main.projects .section:last-child {
+  border: none;
 }
 #overlay {
   display: none;
@@ -337,4 +382,16 @@ a.ps3 {
   margin-bottom: 5px;
   border-radius: 100%;
   background-color: #3e78ff;
+}
+.footer {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-between;
+  -webkit-box-pack: justify;
+}
+.footer a {
+  color: #0f4b97;
 }
