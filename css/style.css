@@ -34,6 +34,7 @@ p {
   color: #9b69d0;
   width: 900px;
   min-height: 95%;
+  margin-top: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -122,9 +123,6 @@ p {
 }
 .section:last-child {
   border: none;
-}
-.section .intro {
-  font-style: italic;
 }
 .section .intro a {
   display: block;
@@ -387,6 +385,7 @@ a.ts2 {
   width: 900px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 15px;
   display: -webkit-box;
   display: flex;
   justify-content: space-between;
