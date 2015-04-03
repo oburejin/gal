@@ -4,6 +4,7 @@
   font-family: "PT Sans", serif;
   font-size: 17px;
   color: #555555;
+  box-sizing: border-box;
 }
 
 a {
@@ -16,6 +17,10 @@ a {
 html, body {
   width: 100%;
   height: 100%;
+}
+
+body{
+
 }
 
 @main: #9b69d0;
@@ -49,7 +54,7 @@ p {
   color: @main;
   width: 900px;
   min-height: 95%;
-  margin-top: 15px;
+  padding-top: 15px;
   margin-left: auto;
   margin-right: auto;
   .col {
@@ -452,11 +457,12 @@ a.ts2 {
   width: 900px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 15px;
   display: -webkit-box;
   display: flex;
   justify-content: space-between;
   -webkit-box-pack: justify;
+  padding-bottom: 15px;
+
   a{
     color: #0f4b97;
   }
