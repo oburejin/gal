@@ -28,9 +28,7 @@
             });
 
             overlay.on('click', function (event) {
-                //body.removeClass('noscroll');
                 clearOverlay();
-                //overlay.hide();
             });
 
 
